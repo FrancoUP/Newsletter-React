@@ -69,3 +69,29 @@ Per modificare il titolo sempre nel file index.html modificare l'inner HTML dell
 DEPLOY VITE PROJECT TO GITHUB
 
 Vai al sito: https://vitejs.dev/guide/static-deploy
+e seguire solo la prima parte dove facciamo deploy e creiamo la repository in GitHub e poi inserire questi comandi nel terminal :
+
+.git int
+.git add .
+.git commit -m "first commit"
+.git branch -M main
+.git remote add origin https://github.com/FrancoUP/Newsletter-React.git
+.git push -u origin main
+
+In ogni caso tutti questi comandi qui sopra li trova nella repository appena creata in Github
+
+.Poi inserire base: "/nomeProgetto/" nel file vite.config.ts , esempio:
+
+export default defineConfig({
+  base: "/Newsletter-React/",
+  plugins: [react()],
+});
+
+.Poi nella cartella principale creo una cartella ".github" e dentro tale cartella creo un'altra cartella ".workflows" e dentro creto un file "deploy.yml" e dentro copio esattamente questo codice che posso trovare nel sito "https://github.com/ErickKS/vite-deploy".
+
+.Poi su l terminal mando questi:
+
+.git add . 
+.git commit -m "add: deploy workflow" 
+.git push
+
