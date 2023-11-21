@@ -95,3 +95,5 @@ export default defineConfig({
 .git commit -m "add: deploy workflow" 
 .git push
 
+
+.Poi clicco su settings in gitHub , poi Actions e poi General, poi vado in fondo e su Workflow permissions e clicco su Read and write permission e clicco su save
